@@ -37,9 +37,7 @@ pip install numpy
 OpenCV: Used for image processing, accessing the webcam, and displaying results.
 NumPy: Used for creating color ranges and processing image data.
 
-
 ⸻
-
 
 Project Implementation Steps
 Step 1: Import Libraries
@@ -92,7 +90,6 @@ The program compares the camera image with this range. If red pixels are detecte
 
 Red Color Detected
 
-
 2. Green Color Recognition
 
 The program defines a range for detecting green color:
@@ -100,11 +97,9 @@ The program defines a range for detecting green color:
 lower_green = np.array([40,50,50])
 upper_green = np.array([80,255,255])
 
-
 When green color is detected, the system displays:
 
 Green Color Detected
-
 
 3. Blue Color Recognition
 
@@ -113,11 +108,9 @@ The program defines a range for detecting blue color:
 lower_blue = np.array([90,50,50])
 upper_blue = np.array([130,255,255])
 
-
 When blue color is detected, the system displays:
 
 Blue Color Detected
-
 
 How the Code Works
 
@@ -128,38 +121,30 @@ The program checks the image colors using predefined color ranges.
 When a matching color is detected, the program displays the color name on the screen.
 
 ⸻
-
 How to Run the Project
 
 Open the project folder using Visual Studio Code.
 Open the Terminal.
 Run the following command:
 
-
-
 python main.py
-
 
 The webcam will open automatically.
 Place a colored object in front of the camera.
 The system will recognize the color and display its name.
 Press the key Q to close the camera window.
 
-
 Project Files
-
 Color_Recognition_Project
 
 │── main.py
 │── README.md
-
 
 Result
 
 The project successfully detects and recognizes red, green, and blue colors in real-time using OpenCV and a webcam.
 
 ⸻
-
 Conclusion
 
 This project demonstrates the use of computer vision techniques with OpenCV to recognize colors from live camera input. It provides a simple example of real-time image processing and color detection.
